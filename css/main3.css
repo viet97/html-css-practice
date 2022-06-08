@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #007af3;
+  --text-color: #926239;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: black;
+}
+
+.apr-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.img-column {
+  width: 250px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.candle {
+  width: 60px;
+  height: auto;
+}
+
+.apr-column {
+  width: 250px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  margin-bottom: 24px;
+}
+
+.apr-label {
+  font-weight: bold;
+  color: gainsboro;
+}
+
+.apr-value {
+  font-weight: bold;
+  color: white;
+  margin-top: 16px;
+}
+
+.secondary-section {
+  margin-top: 24px;
+  border-radius: 41px;
+  background: hsla(0, 0%, 100%, 0.01);
+  backdrop-filter: blur(31px);
+  box-shadow: inset 0 5px 9px -5px hsl(0deg 0% 100% / 70%),
+    inset 0 -65px 56px -29px rgb(137 109 172 / 25%),
+    inset 0 25px 68px -40px hsl(0deg 0% 100% / 50%),
+    inset 0 28px 38px -4px hsl(0deg 0% 100% / 20%),
+    inset 0 4px 40px rgb(243 232 252 / 25%),
+    inset 0 4px 20px rgb(220 204 240 / 25%),
+    inset 0 98px 100px -40px rgb(100 48 166 / 30%);
+  padding: 60px;
+  display: flex;
+  width: 700px;
+}
+
+.earn-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.earn-column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.earned-logo {
+  width: 60px;
+}
+
+.earned {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 24px;
+  color: white;
+}
+
+.earned-token {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 12px;
+  color: white;
+}
+
+.earn-value {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 12px;
+  color: green;
+}
+
+.approve {
+  width: 100%;
+  background: green;
+  margin-top: 32px;
+  border-width: 0px;
+  border-radius: 24px;
+  height: 36px;
+  color: white;
+  font-weight: bold;
+  min-width: 150px;
+}
+
+.claim {
+  width: 100%;
+  margin-top: 32px;
+  border-width: 0px;
+  border-radius: 24px;
+  height: 36px;
+  font-weight: bold;
+  min-width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .apr-column {
+    border-bottom: 1px solid gray;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+
+  .apr-row {
+    flex-direction: column;
+  }
+
+  .candle {
+    display: none;
+  }
+}
