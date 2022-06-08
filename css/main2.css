@@ -75,7 +75,6 @@ body {
 
 .secondary-section {
   margin-top: 24px;
-  width: 100%;
   border-radius: 41px;
   background: hsla(0, 0%, 100%, 0.01);
   backdrop-filter: blur(31px);
@@ -88,6 +87,7 @@ body {
     inset 0 98px 100px -40px rgb(100 48 166 / 30%);
   padding: 60px;
   display: flex;
+  width: 700px;
 }
 .deer-usdc {
   flex: 1;
@@ -199,7 +199,7 @@ body {
 .zapin {
   margin-top: 48px;
   border-width: 0px;
-  width: 40%;
+  width: 700px;
   height: 32px;
   border-radius: 24px;
   background: green;
@@ -209,7 +209,7 @@ body {
 .provide-lp {
   margin-top: 12px;
   border-width: 0px;
-  width: 40%;
+  width: 700px;
   height: 32px;
   border-radius: 24px;
   font-weight: bold;
@@ -218,7 +218,7 @@ body {
 .claim-and-withdraw {
   margin-top: 12px;
   border-width: 0px;
-  width: 40%;
+  width: 700px;
   height: 32px;
   border-radius: 24px;
   font-weight: bold;
@@ -250,4 +250,70 @@ body {
 .telegram {
   width: 24px;
   height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .apr-row {
+    width: auto;
+    flex-direction: column;
+  }
+  .apr-column {
+    margin-top: 12px;
+  }
+  .vertical-line {
+    height: 1px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .secondary-section {
+    flex-direction: column;
+  }
+  .deer-usdc {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .secondary-section {
+    width: 450px;
+  }
+  .zapin {
+    width: 450px;
+  }
+  .provide-lp {
+    width: 450px;
+  }
+  .claim-and-withdraw {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .apr-row {
+    width: auto;
+    flex-direction: column;
+  }
+  .apr-column {
+    margin-top: 12px;
+  }
+  .vertical-line {
+    height: 1px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .secondary-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .deer-usdc {
+    margin-top: 24px;
+  }
+  .zapin {
+    width: 60%;
+  }
+  .provide-lp {
+    width: 60%;
+  }
+  .claim-and-withdraw {
+    width: 60%;
+  }
 }
