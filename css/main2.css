@@ -2,6 +2,15 @@
   --primary-color: #007af3;
   --text-color: #926239;
 }
+html, body{
+  margin:0;
+  padding:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans;
+}
+
+div{
+  box-sizing: border-box;
+}
 
 body {
   background: black;
@@ -39,17 +48,20 @@ body {
   margin-top: 1em;
   flex-direction: row;
   display: flex;
-  flex: 1;
-  width: 100%;
-  justify-content: center;
+  max-width: 100%;
+  width:100%;
+  align-items: center;
 }
 
 .apr-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   flex: 1;
+  text-align: center;
 }
+
+.apr-column:not(:first-child){
+  border-left: 1px solid gray;
+}
+
 .apr {
   color: gainsboro;
   text-transform: uppercase;
@@ -61,12 +73,18 @@ body {
 }
 
 .main-section {
-  flex: 1;
-  width: 50vw;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
+
 
 .vertical-line {
   background: gainsboro;
@@ -87,7 +105,8 @@ body {
     inset 0 98px 100px -40px rgb(100 48 166 / 30%);
   padding: 60px;
   display: flex;
-  width: 700px;
+  max-width: 100%;
+  width: 100%;
 }
 .deer-usdc {
   flex: 1;
@@ -255,45 +274,17 @@ body {
 @media only screen and (max-width: 768px) {
   .apr-row {
     width: auto;
-    flex-direction: column;
-  }
-  .apr-column {
-    margin-top: 12px;
-  }
-  .vertical-line {
-    height: 1px;
+    display: block;
     width: 100%;
-    margin-top: 12px;
-  }
-  .secondary-section {
-    flex-direction: column;
-  }
-  .deer-usdc {
-    margin-top: 24px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .secondary-section {
-    width: 450px;
-  }
-  .zapin {
-    width: 450px;
-  }
-  .provide-lp {
-    width: 450px;
-  }
-  .claim-and-withdraw {
-    width: 450px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .apr-row {
-    width: auto;
-    flex-direction: column;
   }
   .apr-column {
     margin-top: 12px;
+  }
+
+  .apr-column:not(:first-child){
+    border-top: 1px solid gray;
+    border-left: 0px;
+    padding-top: 12px;
   }
   .vertical-line {
     height: 1px;
